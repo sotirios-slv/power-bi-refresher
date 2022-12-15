@@ -6,6 +6,7 @@ const Login = () => {
   useEffect(() => {
     const getData = async() => {
       const response = await axios.get('/api/index')
+      console.log('Response ')
       console.log(response)
     }
     getData()
