@@ -6,7 +6,7 @@ const Login = () => {
   const handleLogin = () => {
     console.log('Click')
     const getData = async() => {
-      const response = await axios.get('/api')
+      const response = await axios.get('/api/index')
       console.log('Response ')
       console.log(response)
     }
