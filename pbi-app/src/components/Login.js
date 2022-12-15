@@ -1,19 +1,26 @@
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import axios from 'axios'
 
 const Login = () => {
 
-  useEffect(() => {
+  const handleLogin = () => {
+    console.log('Click')
     const getData = async() => {
       const response = await axios.get('/api/index')
       console.log('Response ')
       console.log(response)
     }
     getData()
-  },[])
+  }
 
   return (
-    <div>Login</div>
+    <div>
+      <button
+        onClick={handleLogin}
+      >
+        Login
+      </button>
+    </div>
   )
 }
 
